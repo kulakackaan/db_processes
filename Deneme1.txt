@@ -1,0 +1,9 @@
+m1F_Aapx=jjjjjjj
+m1F_Aref=hhhhhhh
+m2F_Aapx=jjjjjjjssssssssssssss
+m2F_Aref=hhhhhhhssssssssssssss
+
+
+
+
+m1F_A (2p3s)

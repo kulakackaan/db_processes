@@ -29,7 +29,7 @@ class sqlhandler():
 
             for row in self.__iterrow(curs, self.__fetchsize):
                 self.result.append(row)
-            return self.result
+            return self.result, curs.column_names
 
 
         except Exception as err:

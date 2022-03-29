@@ -34,6 +34,7 @@ class sqlhandler():
 
         except Exception as err:
             #logging gelmelidir.
+            print(err)
             raise
 
         finally:

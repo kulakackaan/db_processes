@@ -5,7 +5,7 @@ import pandas as pd
 dm = datamanager()
 localserver = sqlhandler('mysqllocal')
 localserver.fetchsize = 10
-localserver.query = ("SELECT * FROM officelean WHERE DAY(ctime) > 20")
+localserver.query = ("SELECT * FROM officelean")
 
 def refactor_func(dm, localserver):
     try:

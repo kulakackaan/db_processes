@@ -10,7 +10,7 @@ config['mysqllocal'] = {
 }
 
 config['mysqlremote'] = {
-    'host' : '192.168.220.253',
+    'host' : '192.168.254.202',
     'database' : 'dcollectiondb',
     'user' : 'RemoteAdmin',
     'password' : 'armaarge'

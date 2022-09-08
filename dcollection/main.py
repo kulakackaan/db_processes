@@ -3,7 +3,7 @@ from datamanager import datamanager
 import pandas as pd
 
 dm = datamanager()
-localserver = sqlhandler('mysqlremote')
+localserver = sqlhandler('mysqllocal')
 localserver.fetchsize = 10
 localserver.query = ("SELECT * FROM officelean")
 
@@ -18,6 +18,7 @@ def refactor_func(dm, localserver):
         #for tmp in temp:
             #print(tmp)
         print(df)
+        df.to_csv('C:\\Users\\Pc\\Desktop\\officelean\\officelean.csv', encoding='utf-8')
     except Exception as e:
         print(e)
 

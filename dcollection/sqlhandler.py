@@ -1,5 +1,5 @@
 from mysql.connector import MySQLConnection, Error
-from python_mysql_dbconfig import read_db_config
+from gathering.utilities.gathering.python_mysql_dbconfig import read_db_config
 
 class sqlhandler():
 
@@ -26,6 +26,8 @@ class sqlhandler():
             conn = MySQLConnection(**self.db_conf)
             curs = conn.cursor()
             curs.execute(self.__query)
+            print('curs list', curs)
+            self.result.clear()
 
             for row in self.__iterrow(curs, self.__fetchsize):
                 self.result.append(row)
@@ -40,6 +42,7 @@ class sqlhandler():
         finally:
             if conn is not None and conn.is_connected():
                 conn.close()
+                print('sqlhandler connection is closed')
                 #print('Connection closed.') loglama gelecek.
 
     @property

@@ -1,7 +1,7 @@
 from configparser import ConfigParser
 
 
-def read_db_config(filename='dcollection/config.ini', section='mysqllocal'):
+def read_db_config(filename='C:/GithubRepos/Vscode/cs50web/myowntemp/datagather/gathering/utilities/gathering/config.ini', section='mysqllocal'):
     """ Read database configuration file and return a dictionary object
     :param filename: name of the configuration file
     :param section: section of database configuration
